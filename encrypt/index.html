@@ -121,7 +121,8 @@ document.querySelector("#encrypt").addEventListener("click", async function(even
   document.querySelector("#folder_link").setAttribute("disabled", "");
   document.querySelector("#encrypt").setAttribute("disabled", "");
   try {
-    document.querySelector("#encrypted_link").value = "Z2QtZWZjLm1naXdreG9hLndvcmtlcnMuZGV2." + (await encryptFolder());
+    //document.querySelector("#encrypted_link").value = "Z2QtZWZjLm1naXdreG9hLndvcmtlcnMuZGV2." + (await encryptFolder());
+    document.querySelector("#encrypted_link").value = "https://gd-efc.pages.dev/#" + (await encryptFolder());
   }
   catch(e) {
     alert(e.message);
